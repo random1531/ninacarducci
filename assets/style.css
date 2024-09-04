@@ -219,6 +219,10 @@ input[type="submit"] {
 	background-color: #beb45a;
 	padding: 0.5em 1em;
 }
+
+footer {
+	display: none;
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;

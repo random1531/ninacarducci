@@ -48,7 +48,6 @@
     tagsPosition: "bottom",
     navigation: true
   };
-  
   $.fn.mauGallery.listeners = function(options) {
     $(".gallery-item").on("click", function() {
       if (options.lightBox && $(this).prop("tagName") === "IMG") {

@@ -19,23 +19,7 @@
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci photographe",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
-		  },
-		  "telephone": "+33-5-56-67-78-89",
-		  "openingHours": "Mo-Fr 10:00-19:00"
-		}
-		</script>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
@@ -60,7 +44,6 @@
 	</header>
 	<main>
 		<div id="header">
-
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -228,6 +211,22 @@
 			</div>
 		</div>
 	</main>
+
+	<footer>
+		<div itemscope itemtype="https://schema.org/LocalBusiness">
+			<h2 itemprop="name">Nina Carducci photographe</h2>
+
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
+				<span itemprop="addressLocality">Bordeaux</span>,
+				<span itemprop="postalCode">33200</span><br>
+				<span itemprop="addressCountry">FR</span>
+			</div>
+
+			<p>Téléphone : <span itemprop="telephone">+33-5-56-67-78-89</span></p>
+			<p>Heures d'ouverture : <span itemprop="openingHours">Mo-Fr 10:00-19:00</span></p>
+		</div>
+	</footer>
 </body>
 
 </html>
