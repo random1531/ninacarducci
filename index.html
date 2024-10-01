@@ -31,7 +31,17 @@
 	defer></script>
 	<script src="./assets/scripts-min.js" 
 	defer></script>
-	<script type="application/ld+json" src="./assets/test.json"></script>
+	<script>
+		fetch('./assets/test.json')
+		  .then(response => response.json())
+		  .then(data => {
+			const script = document.createElement('script');
+			script.type = 'application/ld+json';
+			script.text = JSON.stringify(data);
+			document.head.appendChild(script);
+		  });
+		</script>
+		
 	<title>Nina Carducci</title>
 </head>
 
